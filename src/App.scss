@@ -172,11 +172,11 @@
             padding: 1rem;
         }
 
-        .p-datatable-thead > tr > th {
+        .p-datatable-thead>tr>th {
             text-align: left;
         }
 
-        .p-datatable-tbody > tr > td {
+        .p-datatable-tbody>tr>td {
             cursor: auto;
         }
 
@@ -186,7 +186,7 @@
     }
 
     /* Responsive */
-    .p-datatable-customers .p-datatable-tbody > tr > td > .p-column-title {
+    .p-datatable-customers .p-datatable-tbody>tr>td>.p-column-title {
         display: none;
     }
 
@@ -198,22 +198,22 @@
         font-size: 12px;
         letter-spacing: .3px;
 
-        &.status-qualified {
+        &.status-delivered {
             background: #C8E6C9;
             color: #256029;
         }
 
-        &.status-unqualified {
+        &.status-cancelled {
             background: #FFCDD2;
             color: #C63737;
         }
 
-        &.status-negotiation {
+        &.status-refund {
             background: #FEEDAF;
             color: #8A5340;
         }
 
-        &.status-new {
+        &.status-paid {
             background: #B3E5FC;
             color: #23547B;
         }
@@ -223,7 +223,7 @@
             color: #694382;
         }
 
-        &.status-proposal {
+        &.status-processing {
             background: #FFD8B2;
             color: #805B36;
         }
@@ -304,13 +304,14 @@
     @media screen and (max-width: 960px) {
         .p-datatable {
             &.p-datatable-customers {
-                .p-datatable-thead > tr > th,
-                .p-datatable-tfoot > tr > td {
+
+                .p-datatable-thead>tr>th,
+                .p-datatable-tfoot>tr>td {
                     display: none !important;
                 }
 
-                .p-datatable-tbody > tr {
-                    > td {
+                .p-datatable-tbody>tr {
+                    >td {
                         text-align: left;
                         display: block;
                         border: 0 none !important;
@@ -377,21 +378,23 @@
     }
 
     /* Responsive */
-    .datatable-responsive .p-datatable-tbody > tr > td .p-column-title {
+    .datatable-responsive .p-datatable-tbody>tr>td .p-column-title {
         display: none;
     }
 
     @media screen and (max-width: 960px) {
         .p-datatable {
             &.datatable-responsive {
-                .p-datatable-thead > tr > th,
-                .p-datatable-tfoot > tr > td {
+
+                .p-datatable-thead>tr>th,
+                .p-datatable-tfoot>tr>td {
                     display: none !important;
                 }
 
-                .p-datatable-tbody > tr {
+                .p-datatable-tbody>tr {
                     border-bottom: 1px solid var(--surface-d);
-                    > td {
+
+                    >td {
                         text-align: left;
                         display: flex;
                         align-items: center;
@@ -446,7 +449,9 @@
 }
 
 pre[class*="language-"] {
-    &:before, &:after {
+
+    &:before,
+    &:after {
         display: none !important;
     }
 
@@ -460,6 +465,7 @@ pre[class*="language-"] {
     }
 
     .token {
+
         &.tag,
         &.keyword {
             color: #2196F3 !important;
